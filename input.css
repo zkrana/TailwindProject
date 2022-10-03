@@ -69,6 +69,10 @@ body {
 .shape-mark{
   @apply before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block;
 }
+
+.sale{
+  @apply flex justify-center items-center before:absolute before:w-12 before:h-12 before:rounded-full before:bg-pink-500 relative inline-block;
+}
 .subscription{
   @apply h-11 px-6 text-white bg-brightRed rounded hover:bg-orange-400 hover:text-black inline cursor-pointer;
 }
