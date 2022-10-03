@@ -9,14 +9,81 @@ body {
   background-position: 90% -25%; */
 }
 
-.btn-red{
+.btn-red {
   @apply px-5 py-3 text-white bg-brightRed hover:bg-orange-400 hover:text-black rounded;
 }
-.cart-btn{
+
+.cart-btn {
   @apply px-1 xl:px-5;
 }
-.display-condition{
-  @apply  sm:hidden md:block;
+
+.display-condition {
+  @apply sm:hidden md:block;
+}
+
+.active {
+  @apply text-lg text-red-500 px-2;
+}
+
+.non-active-nav {
+  @apply text-gray-400 text-lg px-2 hover:text-black cursor-pointer;
+}
+
+.hero-section {
+  @apply flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 lg:space-y-0 lg:flex-row;
+}
+
+.hero-heading {
+  @apply max-w-lg text-4xl font-bold text-center lg:text-5xl lg:text-left;
+}
+
+.hero-image {
+  @apply sm:flex-shrink-0 transform duration-500;
+}
+
+.middle-layer {
+  @apply flex flex-col md:flex-row justify-evenly mt-10 p-3 md:p-10;
+}
+.btn-list{
+  @apply  w-12 h-10 bg-orange-600 rounded text-white justify-center items-center inline;
+}
+.para-mid-layer{
+  @apply max-w-sm text-center text-darkGrayishBlue lg:text-left block;
+}
+.service{
+  @apply flex flex-wrap flex-col lg:flex-row container p-3 lg:p-10;
+}
+.product-panel{
+  @apply w-full flex justify-start flex-col-reverse lg:flex-row items-start px-5;
+}
+
+.pag-active{
+  @apply rounded-l inline-block px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase bg-red-300 focus:bg-blue-700 focus:outline-none focus:ring-0  transition duration-150 ease-in-out;
+}
+.pagination-item{
+  @apply inline-block px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase bg-brightRed focus:outline-none focus:ring-0  transition duration-150 ease-in-out;
+}
+.promotion{
+  @apply sm:w-full  flex justify-center items-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500;
+}
+.shape-mark{
+  @apply before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block;
+}
+.subscription{
+  @apply h-11 px-6 text-white bg-brightRed rounded hover:bg-orange-400 hover:text-black inline cursor-pointer;
+}
+.testmonial-person{
+  @apply flex flex-col items-center md:w-1/3 bg-veryLightGray text-center rounded px-5 py-7;
+}
+
+.footer{
+  @apply flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0;
+}
+.copyright{
+  @apply flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start;
+}
+.footer-btn{
+  @apply px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none;
 }
 
 #cta {
@@ -82,19 +149,23 @@ body {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
-.hidden{
+.hidden {
   display: none;
 }
-.promotion{
+
+.promotion {
   height: fit-content;
   padding: 80px 0;
 }
-.service{
+
+.service {
   width: 100%;
 }
+
 .sidebar {
   border-right: 1px solid #e6e6e6;
 }
+
 @media (max-width: 767px) {
   .sidebar {
     border-right: none;
@@ -102,12 +173,13 @@ body {
   }
 }
 
-.nav-mb{
+.nav-mb {
   position: relative;
   margin: .5rem;
   padding: 2.5rem;
   text-align: center;
 }
+
 .menu-items {
   text-align: center;
   position: absolute;
@@ -127,17 +199,17 @@ body {
   z-index: 12;
 }
 
-.menu-items li{
+.menu-items li {
   color: white;
   padding: 0.5rem;
 }
 
-.menu-items li a{
+.menu-items li a {
   color: white;
   text-decoration: none;
 }
 
-.menu-items li a:hover{
+.menu-items li a:hover {
   color: rgb(174, 174, 174);
 }
 
