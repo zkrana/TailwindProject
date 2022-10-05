@@ -538,6 +538,12 @@ video {
   }
 }
 
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .absolute {
   position: absolute;
 }
@@ -1356,6 +1362,12 @@ body {
 @media (min-width: 1280px) {
   .service {
     max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .service {
+    max-width: 1536px;
   }
 }
 
