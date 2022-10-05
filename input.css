@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+  .container {
+    @apply max-w-7xl !important;
+  }
+}
+
 body {
   /* background-image: url('../img/bg-tablet-pattern.svg');
   background-repeat: no-repeat;

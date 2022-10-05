@@ -410,6 +410,10 @@ video {
   height: auto;
 }
 
+.container {
+  max-width: 80rem !important;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -510,9 +514,9 @@ video {
   margin-left: auto;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 640px) {
   .container {
-    max-width: 480px;
+    max-width: 640px;
   }
 }
 
@@ -522,15 +526,15 @@ video {
   }
 }
 
-@media (min-width: 976px) {
+@media (min-width: 1024px) {
   .container {
-    max-width: 976px;
+    max-width: 1024px;
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1280px) {
   .container {
-    max-width: 1240px;
+    max-width: 1280px;
   }
 }
 
@@ -912,6 +916,10 @@ video {
   padding: 0.25rem;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -920,28 +928,14 @@ video {
   padding: 1.5rem;
 }
 
-.p-3 {
-  padding: 0.75rem;
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .py-2 {
@@ -969,6 +963,11 @@ video {
   padding-bottom: 1.75rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -986,6 +985,10 @@ video {
 
 .py-10 {
   padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.pb-10 {
   padding-bottom: 2.5rem;
 }
 
@@ -1031,6 +1034,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .text-4xl {
@@ -1177,14 +1184,14 @@ body {
   padding-right: 0.25rem;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1280px) {
   .cart-btn {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 640px) {
   .display-condition {
     display: none;
   }
@@ -1240,7 +1247,7 @@ body {
   padding-right: 1.5rem;
 }
 
-@media (min-width: 976px) {
+@media (min-width: 1024px) {
   .hero-section {
     flex-direction: row;
   }
@@ -1260,7 +1267,7 @@ body {
   font-weight: 700;
 }
 
-@media (min-width: 976px) {
+@media (min-width: 1024px) {
   .hero-heading {
     text-align: left;
     font-size: 3rem;
@@ -1273,7 +1280,7 @@ body {
   transition-duration: 500ms;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 640px) {
   .hero-image {
     flex-shrink: 0;
   }
@@ -1315,21 +1322,22 @@ body {
   color: hsl(227 12% 61% / var(--tw-text-opacity));
 }
 
-@media (min-width: 976px) {
+@media (min-width: 1024px) {
   .para-mid-layer {
     text-align: left;
   }
 }
 
 .service {
+  max-width: 80rem !important;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 640px) {
   .service {
-    max-width: 480px;
+    max-width: 640px;
   }
 }
 
@@ -1339,15 +1347,15 @@ body {
   }
 }
 
-@media (min-width: 976px) {
+@media (min-width: 1024px) {
   .service {
-    max-width: 976px;
+    max-width: 1024px;
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1280px) {
   .service {
-    max-width: 1240px;
+    max-width: 1280px;
   }
 }
 
@@ -1358,7 +1366,7 @@ body {
   padding: 0.75rem;
 }
 
-@media (min-width: 976px) {
+@media (min-width: 1024px) {
   .service {
     flex-direction: row;
     padding: 2.5rem;
@@ -1375,7 +1383,7 @@ body {
   padding-right: 1.25rem;
 }
 
-@media (min-width: 976px) {
+@media (min-width: 1024px) {
   .product-panel {
     flex-direction: row;
   }
@@ -1458,7 +1466,7 @@ body {
   --tw-gradient-to: #ec4899;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 640px) {
   .promotion {
     width: 100%;
   }
@@ -1864,21 +1872,13 @@ body {
   outline-offset: 2px;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 640px) {
   .sm\:block {
     display: block;
   }
 
   .sm\:w-auto {
     width: auto;
-  }
-
-  .sm\:flex-row {
-    flex-direction: row;
-  }
-
-  .sm\:flex-col {
-    flex-direction: column;
   }
 
   .sm\:self-center {
@@ -1991,7 +1991,7 @@ body {
   }
 }
 
-@media (min-width: 976px) {
+@media (min-width: 1024px) {
   .lg\:mt-0 {
     margin-top: 0px;
   }

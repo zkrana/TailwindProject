@@ -1,12 +1,6 @@
 module.exports = {
   content: ['./*.html'],
   theme: {
-    screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1240px',
-    },
     extend: {
       colors: {
         brightRed: 'hsl(12, 88%, 59%)',
@@ -21,11 +15,41 @@ module.exports = {
     },
     container: {
       center: true,
+      screens: {
+        sm: "640px",
+        // => @media (min-width: 640px) { ... }
+        md: "768px",
+        // => @media (min-width: 768px) { ... }
+        lg: "1024px",
+        // => @media (min-width: 1024px) { ... }
+        xl: "1280px",
+        // => @media (min-width: 1280px) { ... }
+      },
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
   },
-  plugins: [],
+  plugins: [
+    // function ({ addComponents }) {
+    //   addComponents({
+    //     '.container': {
+    //       maxWidth: '100%',
+    //       '@screen sm': {
+    //         maxWidth: '640px',
+    //       },
+    //       '@screen md': {
+    //         maxWidth: '768px',
+    //       },
+    //       '@screen lg': {
+    //         maxWidth: '1024px',
+    //       },
+    //       '@screen xl': {
+    //         maxWidth: '1240px',
+    //       },
+    //     }
+    //   })
+    // }
+  ],
 }

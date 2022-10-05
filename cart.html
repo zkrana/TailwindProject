@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
   <link rel="stylesheet" href="css/main.css" />
-  <title>Manage Landing Page</title>
+  <title>Cart : Manage Shop</title>
 </head>
 
-<body class=" bg-teal-50">
+<body class="bg-teal-50">
 
   <div class="header container justify-between items-center p-1 hidden md:flex">
     <div class="header-logo w-40 h-20 flex items-center">
@@ -19,6 +19,7 @@
     <nav class="text-center">
       <a class="active">Home</a>
       <a class="non-active-nav">About Us</a>
+      <a class="non-active-nav">Shop</a>
       <a class="non-active-nav">Service</a>
       <a class="non-active-nav">Contact</a>
     </nav>
@@ -28,6 +29,7 @@
       <ul class="menu-items">
         <li><a href="#" target="_blank">Home</a></li>
         <li><a href="#" target="_blank">About Us</a></li>
+        <li><a class="non-active-nav">Shop</a></li>
         <li><a href="#" target="_blank">Service</a></li>
         <li><a href="#" target="_blank">Contact</a></li>
       </ul>
@@ -64,16 +66,18 @@
   </div>
 
   <!-- Product Display -->
-  <section>
+  <section class="pb-10">
     <div class="product-display container">
       <div class="w-full page-header p-3 sm:py-3 block">
         <a href="index.html"><span class="text-black">Home/</span></a><span class="text-gray-400">Smart Watch</span>
       </div>
-      <div class="flex justify-between flex-col lg:flex-row items-center">
-        <div class="w-full lg:w-1/2">
+      <div class="flex justify-center flex-col lg:flex-row items-center">
+        <div class="w-full lg:w-1/2 p-3">
           <img src="img/product/rachit-tank-2cFZ_FB08UM-unsplash.jpg" class="w-full">
           <div class="footer-show w-full h-auto flex justify-evenly items-center my-5">
             <img src="img/product/rachit-tank-2cFZ_FB08UM-unsplash.jpg" class=" w-28 h-28 inline">
+            <img src="img/product/rachit-tank-2cFZ_FB08UM-unsplash.jpg"
+              class=" w-28 h-28 inline opacity-70 hover:opacity-100 cursor-pointer">
             <img src="img/product/rachit-tank-2cFZ_FB08UM-unsplash.jpg"
               class=" w-28 h-28 inline opacity-70 hover:opacity-100 cursor-pointer">
             <img src="img/product/rachit-tank-2cFZ_FB08UM-unsplash.jpg"
@@ -160,14 +164,15 @@
 
             </div>
             <button class="btn-red block w-60 mt-5">Add to Cart</button>
-            <p class="block text-gray-400 py-3">
+            <p class="block text-gray-400 text-justify py-4">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, voluptate sed quis quod iusto
               excepturi, fugit corrupti doloribus harum labore natus repellendus laborum molestias provident? Dolorum
               iure, repellendus aut delectus incidunt soluta officia sequi beatae odio. At quos, neque placeat quo quasi
               ratione dolores omnis temporibus, nemo quae itaque cumque?
             </p>
             <div class="flex py-4 justify-between border-t-2 border-b-2 border-gray-100">
-              <span class=" cursor-pointer"><i class="w-12 fa-duotone fa-heart"></i>Add to wishlist</span><span class=" cursor-pointer">Share</span>
+              <span class=" cursor-pointer"><i class="w-12 fa-duotone fa-heart"></i>Add to wishlist</span><span
+                class=" cursor-pointer">Share</span>
             </div>
             <div class="category py-4">
               <h4 class="block"> Category </h4>
@@ -180,7 +185,7 @@
               <span class="text-gray-500 py-2 inline px-3 cursor-pointer">Stylish Watch</span>
             </div>
             <div class="tabs">
-              
+
             </div>
           </div>
         </div>
@@ -322,7 +327,7 @@
           </div>
         </div>
 
-        <div class="card bg-white w-full lg:w-3/4 rounded lg:ml-3 p-4">
+        <div class="cards bg-white w-full lg:w-3/4 rounded lg:ml-3 mt-4 lg:mt-0 p-4">
           <img src="img/product/rachit-tank-2cFZ_FB08UM-unsplash.jpg" alt="Image" class="rounded w-full h-40">
 
           <div>
@@ -386,7 +391,9 @@
             <a href="cart.html"><button class="btn-red cart-btn">Add to Cart</button></a>
           </div>
         </div>
+
       </div>
+    </div>
     </div>
   </section>
   <!-- Product Display -->
